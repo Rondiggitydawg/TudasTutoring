@@ -36,7 +36,9 @@
 
 .logo-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
   line-height: 1;
 }
 
@@ -50,7 +52,7 @@
 
 .logo-tutoring {
   font-family: var(--font-body);
-  font-weight: 500;
+  font-weight: 700;
   color: var(--charcoal);
   font-size: 1rem;
 }
