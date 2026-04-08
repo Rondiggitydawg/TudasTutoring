@@ -23,9 +23,21 @@
 /* ─── Logo ───────────────────────────────────────────────── */
 .nav-logo {
   display: flex;
-  align-items: baseline;
-  gap: 4px;
+  align-items: center;
+  gap: 10px;
   font-size: 1.3rem;
+}
+
+.site-logo {
+  width: 44px;
+  height: auto;
+  display: block;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
 }
 
 .logo-tudas {
