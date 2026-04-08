@@ -39,7 +39,15 @@ function validateForm(form) {
   let valid = true;
 
   form.querySelectorAll('[required]').forEach((field) => {
-    if (!field.value.trim()) {
+    // Handle checkboxes (subjects) separately
+    if (field.type === 'checkbox' && field.name === 'subject') {
+      const subjectCheckboxes = form.querySelectorAll('input[name="subject"]');
+      const checkedSubjects = Array.from(subjectCheckboxes).filter(cb => cb.checked);
+      if (checkedSubjects.length === 0) {
+        markError(field);
+        valid = false;
+      }
+    } else if (!field.value.trim()) {
       markError(field);
       valid = false;
     }
@@ -49,14 +57,28 @@ function validateForm(form) {
 }
 
 function markError(field) {
-  field.classList.add('field-error');
-
-  // Clear error state once the user starts correcting the field
-  field.addEventListener(
-    'input',
-    () => field.classList.remove('field-error'),
-    { once: true },
-  );
+  if (field.type === 'checkbox' && field.name === 'subject') {
+    // For checkboxes, mark the container
+    const container = field.closest('.subject-checkboxes');
+    if (container) {
+      container.classList.add('field-error');
+      // Clear error state when any checkbox is clicked
+      const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+          container.classList.remove('field-error');
+        }, { once: true });
+      });
+    }
+  } else {
+    field.classList.add('field-error');
+    // Clear error state once the user starts correcting the field
+    field.addEventListener(
+      'input',
+      () => field.classList.remove('field-error'),
+      { once: true },
+    );
+  }
 }
 
 function showSuccess(form, success) {
