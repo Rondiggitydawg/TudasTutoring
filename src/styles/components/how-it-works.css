@@ -1,0 +1,95 @@
+/* ─── How It Works ───────────────────────────────────────── */
+
+#how-it-works {
+  padding: var(--section-pad) 0;
+  background: var(--yellow-warm);
+}
+
+/* ─── Steps row ──────────────────────────────────────────── */
+.steps-wrapper {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  list-style: none;
+}
+
+/* Dashed connecting line between step numbers */
+.steps-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: calc(16.67% + 16px);
+  right: calc(16.67% + 16px);
+  height: 2px;
+  border-top: 2px dashed rgba(232, 184, 75, 0.6);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ─── Individual step ────────────────────────────────────── */
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-num {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--charcoal);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 16px rgba(232, 184, 75, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover .step-num {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(232, 184, 75, 0.5);
+}
+
+.step-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--charcoal);
+}
+
+.step-desc {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #how-it-works {
+    padding: var(--section-pad-sm) 0;
+  }
+
+  .steps-wrapper {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* Hide the connecting line on mobile — steps stack vertically */
+  .steps-wrapper::before {
+    display: none;
+  }
+
+  .step {
+    padding: 0;
+  }
+}

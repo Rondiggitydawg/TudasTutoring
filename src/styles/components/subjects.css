@@ -1,0 +1,90 @@
+/* ─── Subjects ───────────────────────────────────────────── */
+
+#subjects {
+  padding: var(--section-pad) 0;
+  background: var(--white);
+}
+
+/* ─── Grid ───────────────────────────────────────────────── */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+}
+
+/* ─── Card ───────────────────────────────────────────────── */
+.subject-card {
+  background: var(--white);
+  border: 1.5px solid #f0f0f5;
+  border-radius: var(--radius-card);
+  padding: 28px 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gold top border that reveals on hover */
+.subject-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius: 2px 2px 0 0;
+}
+
+.subject-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+.subject-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Center the 7th card (last in a 3-column grid) */
+.subject-card--center {
+  grid-column: 2;
+}
+
+/* ─── Card content ───────────────────────────────────────── */
+.subject-emoji {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.subject-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: var(--charcoal);
+}
+
+.subject-desc {
+  font-size: 0.875rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #subjects {
+    padding: var(--section-pad-sm) 0;
+  }
+
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-card--center {
+    grid-column: 1;
+  }
+}

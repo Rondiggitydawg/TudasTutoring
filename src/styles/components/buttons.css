@@ -1,0 +1,61 @@
+/* ─── Shared Button Styles ──────────────────────────────────
+   Pill-shaped buttons used across hero, navbar, pricing, etc.
+──────────────────────────────────────────────────────────── */
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  transition: background-color 0.25s ease, color 0.25s ease,
+              box-shadow 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--charcoal);
+  box-shadow: 0 4px 16px rgba(232, 184, 75, 0.35);
+}
+
+.btn-primary:hover {
+  background: var(--gold-dark);
+  box-shadow: 0 6px 24px rgba(232, 184, 75, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+}
+
+.btn-outline:hover {
+  background: var(--charcoal);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background: var(--white);
+  color: var(--gold-dark);
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.btn-white:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .btn {
+    padding: 13px 24px;
+    font-size: 0.9rem;
+  }
+}

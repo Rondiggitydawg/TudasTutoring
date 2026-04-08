@@ -1,0 +1,27 @@
+/* ─── CSS Entry Point ───────────────────────────────────────
+   Import order matters: variables and reset must load first
+   so every subsequent rule can reference custom properties.
+──────────────────────────────────────────────────────────── */
+
+/* Base */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* Perpetual CSS keyframe animations */
+@import './animations/keyframes.css';
+
+/* Shared UI components */
+@import './components/buttons.css';
+
+/* Section components */
+@import './components/navbar.css';
+@import './components/hero.css';
+@import './components/about.css';
+@import './components/subjects.css';
+@import './components/testimonials.css';
+@import './components/pricing.css';
+@import './components/how-it-works.css';
+@import './components/location.css';
+@import './components/contact.css';
+@import './components/footer.css';

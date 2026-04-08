@@ -1,0 +1,82 @@
+/* ─── Testimonials ───────────────────────────────────────── */
+
+#testimonials {
+  padding: var(--section-pad) 0;
+  background: var(--cream);
+}
+
+/* ─── Grid ───────────────────────────────────────────────── */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+}
+
+/* ─── Card ───────────────────────────────────────────────── */
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius-card);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+/* ─── Card content ───────────────────────────────────────── */
+.testimonial-quote-mark {
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  color: var(--gold);
+  line-height: 0.6;
+  margin-bottom: 16px;
+  display: block;
+  opacity: 0.7;
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
+.star {
+  color: var(--gold);
+  font-size: 1.1rem;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-mid);
+  margin-bottom: 20px;
+  font-style: italic;
+  quotes: none;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--charcoal);
+}
+
+.testimonial-role {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 2px;
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #testimonials {
+    padding: var(--section-pad-sm) 0;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

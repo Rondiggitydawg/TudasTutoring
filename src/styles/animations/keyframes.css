@@ -1,0 +1,29 @@
+/* ─── Perpetual CSS Keyframe Animations ─────────────────────
+   These run continuously and are driven by CSS, not GSAP.
+   Scroll-triggered reveal animations live in scroll-animations.js.
+──────────────────────────────────────────────────────────── */
+
+@keyframes blobMorph {
+  0%   { border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; }
+  33%  { border-radius: 40% 60% 30% 70% / 60% 40% 60% 40%; }
+  66%  { border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%; }
+  100% { border-radius: 50% 50% 40% 60% / 55% 45% 55% 45%; }
+}
+
+@keyframes floatCard {
+  0%,
+  100% { transform: translateY(0px) rotate(-1deg); }
+  50%  { transform: translateY(-14px) rotate(1deg); }
+}
+
+@keyframes floatBadge {
+  0%,
+  100% { transform: translateY(0) rotate(2deg); }
+  50%  { transform: translateY(-8px) rotate(-1deg); }
+}
+
+@keyframes floatBadge2 {
+  0%,
+  100% { transform: translateY(0) rotate(-2deg); }
+  50%  { transform: translateY(-10px) rotate(1deg); }
+}

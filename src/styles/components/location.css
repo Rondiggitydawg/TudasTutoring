@@ -1,0 +1,90 @@
+/* ─── Location ───────────────────────────────────────────── */
+
+#location {
+  padding: var(--section-pad) 0;
+  background: var(--white);
+}
+
+/* ─── Layout ─────────────────────────────────────────────── */
+.location-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+/* ─── Icon ───────────────────────────────────────────────── */
+.location-icon-wrap {
+  width: 100px;
+  height: 100px;
+  background: var(--yellow-soft);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.location-icon {
+  font-size: 2.6rem;
+}
+
+/* ─── Content ────────────────────────────────────────────── */
+.location-content {
+  max-width: 520px;
+}
+
+.location-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--charcoal);
+}
+
+.location-title span {
+  color: var(--gold-dark);
+}
+
+.location-text {
+  font-size: 1rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+}
+
+/* ─── Pill badges ────────────────────────────────────────── */
+.location-pills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.location-pill {
+  background: var(--yellow-soft);
+  color: var(--gold-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 50px;
+  border: 1px solid rgba(232, 184, 75, 0.3);
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #location {
+    padding: var(--section-pad-sm) 0;
+  }
+
+  .location-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .location-pills {
+    justify-content: center;
+  }
+}

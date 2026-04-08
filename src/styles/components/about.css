@@ -1,0 +1,126 @@
+/* ─── About ──────────────────────────────────────────────── */
+
+#about {
+  padding: var(--section-pad) 0;
+  background: var(--yellow-warm);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative blob accent */
+#about::before {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 60% 40% 60% 40% / 50% 60% 40% 50%;
+  background: rgba(232, 184, 75, 0.15);
+  pointer-events: none;
+}
+
+/* ─── Layout ─────────────────────────────────────────────── */
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ─── Avatar ─────────────────────────────────────────────── */
+.about-avatar-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.about-avatar {
+  width: 280px;
+  height: 320px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #ffe98a, #e8b84b 60%, #c99a2e);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  position: relative;
+}
+
+/* Dashed border accent */
+.about-avatar::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 28px;
+  border: 2px dashed rgba(232, 184, 75, 0.4);
+  pointer-events: none;
+}
+
+/* ─── Text ───────────────────────────────────────────────── */
+.about-heading {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3.5vw, 2.5rem);
+  margin-bottom: 16px;
+}
+
+.about-text {
+  color: var(--text-mid);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* ─── Stats ──────────────────────────────────────────────── */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  background: var(--white);
+  border-radius: var(--radius-card);
+  padding: 20px 18px;
+  border-left: 4px solid var(--gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--gold-dark);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-mid);
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-avatar-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding: var(--section-pad-sm) 0;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+}

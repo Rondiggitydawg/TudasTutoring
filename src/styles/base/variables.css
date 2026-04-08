@@ -1,0 +1,37 @@
+/* ─── Design Tokens ─────────────────────────────────────────
+   Single source of truth for all colours, fonts, and shared
+   values. Update here and every component responds.
+──────────────────────────────────────────────────────────── */
+:root {
+  /* Colour palette */
+  --yellow-soft:  #FFF5C2;
+  --yellow-warm:  #FFFBEF;
+  --gold:         #E8B84B;
+  --gold-dark:    #C99A2E;
+  --gold-light:   #FDF0C0;
+  --white:        #FFFFFF;
+  --charcoal:     #1A1A2E;
+  --charcoal-mid: #2D2D44;
+  --text-mid:     #555566;
+  --text-light:   #888899;
+  --cream:        #FFFBEF;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 12px rgba(26, 26, 46, 0.07);
+  --shadow-md: 0 6px 24px rgba(26, 26, 46, 0.10);
+  --shadow-lg: 0 12px 40px rgba(26, 26, 46, 0.14);
+
+  /* Shape */
+  --radius-card: 16px;
+  --radius-btn:  50px;
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Layout */
+  --max-w:        1100px;
+  --section-pad:  96px;
+  --section-pad-sm: 64px;
+  --nav-h:        70px;
+}
