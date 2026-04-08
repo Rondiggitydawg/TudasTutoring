@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="280 16 140 244" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Tudas Tutoring icon</title>
+  <desc>Open book with a growing plant sprouting from the spine</desc>
+  <path d="M290 210 Q290 145 340 138 L340 240 Q315 240 290 247 Z" fill="#E8B84B"/>
+  <path d="M390 210 Q390 145 340 138 L340 240 Q365 240 390 247 Z" fill="#F5D07A"/>
+  <path d="M288 247 Q340 260 392 247 Q392 257 387 260 Q340 272 293 260 Q288 257 288 247Z" fill="#C9922A"/>
+  <rect x="336" y="138" width="8" height="110" rx="3" fill="#C9922A"/>
+  <line x1="304" y1="168" x2="333" y2="165" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="302" y1="183" x2="333" y2="181" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="301" y1="198" x2="333" y2="197" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="300" y1="213" x2="333" y2="213" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="300" y1="228" x2="333" y2="228" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="347" y1="165" x2="374" y2="168" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="347" y1="181" x2="376" y2="183" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="347" y1="197" x2="377" y2="198" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="347" y1="213" x2="378" y2="213" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="347" y1="228" x2="378" y2="228" stroke="#C9922A" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M340 138 Q337 105 340 72" stroke="#4A8C3F" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M340 112 Q308 88 300 68 Q322 75 340 98 Z" fill="#5BA552"/>
+  <path d="M340 92 Q372 68 382 50 Q360 58 340 82 Z" fill="#4A8C3F"/>
+  <ellipse cx="340" cy="67" rx="7" ry="10" fill="#7CC870" transform="rotate(-8,340,67)"/>
+  <circle cx="398" cy="105" r="5" fill="#E8B84B" opacity="0.8"/>
+  <circle cx="282" cy="118" r="4" fill="#E8B84B" opacity="0.6"/>
+  <circle cx="290" cy="140" r="3" fill="#5BA552" opacity="0.5"/>
+  <circle cx="400" cy="130" r="3" fill="#5BA552" opacity="0.4"/>
+</svg>
