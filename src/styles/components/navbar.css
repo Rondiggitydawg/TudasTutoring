@@ -29,7 +29,7 @@
 }
 
 .site-logo {
-  width: 44px;
+  width: 80px;
   height: auto;
   display: block;
 }
@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  gap: 8px;
+  gap: 12px;
   line-height: 1;
 }
 
@@ -172,5 +172,66 @@
 
   .hamburger {
     display: flex;
+  }
+
+  .nav-inner {
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 18px;
+  }
+
+  .site-logo {
+    width: 64px;
+  }
+
+  .logo-text {
+    gap: 8px;
+  }
+
+  .logo-tudas {
+    font-size: 1.15rem;
+  }
+
+  .logo-tutoring {
+    font-size: 0.95rem;
+  }
+
+  .nav-cta {
+    padding: 10px 16px;
+  }
+
+  .mobile-nav {
+    padding: 16px 18px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-inner {
+    padding: 0 14px;
+  }
+
+  .site-logo {
+    width: 50px;
+  }
+
+  .logo-text {
+    gap: 6px;
+  }
+
+  .logo-tudas {
+    font-size: 1.05rem;
+  }
+
+  .logo-tutoring {
+    font-size: 0.92rem;
+  }
+
+  .nav-cta {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+
+  .mobile-nav {
+    padding: 14px 16px 20px;
   }
 }
