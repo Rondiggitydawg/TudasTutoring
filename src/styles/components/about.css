@@ -57,6 +57,16 @@
   pointer-events: none;
 }
 
+/* Avatar image styling */
+.about-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
 /* ─── Text ───────────────────────────────────────────────── */
 .about-heading {
   font-family: var(--font-display);
